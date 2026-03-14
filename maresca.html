@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enzo Maresca's CV</title>
+    <link rel="stylesheet" href="enzo.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="20251210_112311.jpg" alt="Enzo Maresca" />
+      </div>
+
+      <nav class="nav">
+        <button class="btn">Call me</button>
+        <a href="#contact">Contact me</a>
+        <!-- FIXED -->
+      </nav>
+    </header>
+    <main class="Maresca">
+      <section class="trophies">
+        <h1>CHELSEA FOOTBALL CLUB</h1>
+        <p>
+          I am excited to be elected as the head coach of this prestigious
+          institution called Chelsea and I am excited for what lies ahead. Just
+          trust the process everything will work out fine.
+        </p>
+      </section>
+      <hr />
+
+      <video autoplay muted loop playsinline width="400">
+        <source src="2001736913053458599.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <figure>
+        <hr />
+        <img src="20251210_112311.jpg" alt="Pride of London CFC" width="400" />
+        <figcaption>World champions</figcaption>
+      </figure>
+
+      <h2>Enzo Maresca Managerial Career</h2>
+      <br />
+
+      <table>
+        <thead>
+          <tr>
+            <th>Role Type</th>
+            <th>Club / Team</th>
+            <th>Position</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td rowspan="3">Assistant Coach</td>
+            <td>Ascoli</td>
+            <td>Assistant Coach</td>
+            <td>2017</td>
+            <td>2018</td>
+            <td>First coaching role</td>
+          </tr>
+          <tr>
+            <td>Manchester City</td>
+            <td>Assistant Coach</td>
+            <td>2020</td>
+            <td>2021</td>
+            <td>Worked under Pep Guardiola</td>
+          </tr>
+          <tr>
+            <td>Manchester City (U23)</td>
+            <td>Head Coach</td>
+            <td>2021</td>
+            <td>2022</td>
+            <td>Premier League 2 title</td>
+          </tr>
+
+          <tr>
+            <td rowspan="2">Head Coach</td>
+            <td>Parma</td>
+            <td>Head Coach</td>
+            <td>2022</td>
+            <td>2023</td>
+            <td>Short tenure</td>
+          </tr>
+          <tr>
+            <td>Leicester City</td>
+            <td>Head Coach</td>
+            <td>2023</td>
+            <td>2024</td>
+            <td>Promotion to Premier League</td>
+          </tr>
+        </tbody>
+      </table>
+      <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form>
+          <hr />
+          <!-- PERSONAL INFORMATION -->
+          <fieldset>
+            <legend>Personal Information</legend>
+
+            <div class="form-group">
+              <label for="fullname">Full Name</label>
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                required
+                minlength="10"
+                maxlength="20"
+                placeholder="Enter your full name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="example@email.com"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                maxlength="11"
+                placeholder="08012345678"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="city">City</label>
+              <select id="city" name="city" required>
+                <option value="">-- Select your city --</option>
+                <option value="ikeja">Ikeja</option>
+                <option value="lekki">Lekki</option>
+                <option value="ikoyi">Ikoyi</option>
+                <option value="surulere">Surulere</option>
+                <option value="yaba">Yaba</option>
+                <option value="ajah">Ajah</option>
+                <option value="festac">Festac</option>
+                <option value="apapa">Apapa</option>
+                <option value="agege">Agege</option>
+                <option value="badagry">Badagry</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <!-- HOW TO CONTACT -->
+          <fieldset>
+            <legend>How should we contact you?</legend>
+            <div class="form-group">
+              <label>
+                <input
+                  type="radio"
+                  name="contact_method"
+                  value="phone"
+                  required
+                />
+                Phone
+              </label>
+              <label>
+                <input type="radio" name="contact_method" value="email" />
+                Email
+              </label>
+            </div>
+          </fieldset>
+
+          <!-- HEAR ABOUT US -->
+          <fieldset>
+            <legend>How did you hear about us?</legend>
+            <div class="form-group">
+              <label>
+                <input type="checkbox" name="hear[]" value="friend" />
+                Friend
+              </label>
+              <label>
+                <input type="checkbox" name="hear[]" value="ts_academy" />
+                TS Academy
+              </label>
+              <label>
+                <input type="checkbox" name="hear[]" value="others" />
+                Others
+              </label>
+            </div>
+          </fieldset>
+
+          <!-- MESSAGE -->
+          <fieldset>
+            <legend>Message</legend>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                maxlength="100"
+                rows="4"
+                placeholder="Write your message (max 100 characters)"
+              ></textarea>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </section>
+      <hr />
+      <section>
+        <h1>About</h1>
+        <ul>
+          <li>How i work</li>
+          <li>Features of my work</li>
+          <li>My partnership</li>
+          <li>Business relation</li>
+        </ul>
+      </section>
+    </main>
+    <hr />
+    <footer>&copy;2026 Chelsea Football Club. All rights reserved</footer>
+  </body>
+</html>
